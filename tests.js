@@ -13,3 +13,27 @@ describe('helloWorld', function() {
       expect(helloWorld()).not.toBe(undefined);
     });
 });
+describe('sayHello', function(){
+    it('should be a defined function', function(){
+        expect(typeof sayHello).toBe('function');
+    });
+});
+
+
+
+
+
+
+/*describe('double', function(){
+    it('should return a number', function(){
+        expect(typeof double()).toBe("number")
+    });
+
+});*/
+
+/*
+describe('nameOfFunctionToBeTested', function(){
+    it('describe what is being tested', function(){
+        expect('what you are wanting to test').'jasmineMethod'('what it is supposed to be')
+    })
+})*/
