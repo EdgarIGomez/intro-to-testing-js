@@ -135,6 +135,32 @@ describe('isVowel', function () {
     });
 });
 
+describe('add', function(){
+    it('should be a defined function', function () {
+        expect(typeof add).toBe("function")
+    });
+    it('should return 5 when add(2, 3)', function () {
+        expect(add(2, 3)).toEqual(5)
+    });
+    it('should return -12 when add(-3, -9)', function () {
+        expect(add(-3, -9)).toEqual(-12)
+    });
+    it('should return 11 when add("5", 6)', function () {
+        expect(add("5", 6)).toEqual(11)
+    });
+    it('should return 6 when add(-4, 10)', function () {
+        expect(add(-4, 10)).toEqual(6)
+    });
+    it('should return NaN when add("banana", "split")', function () {
+        expect(add("banana", "split")).toEqual(NaN)
+    });
+    it('should return NaN when add(2, "apples")', function () {
+        expect(add(2, "apples")).toEqual(NaN)
+    });
+    it('should return NaN when add() is called', function () {
+        expect(add()).toEqual(NaN)
+    });
+})
 
 /*describe('double', function(){
     it('should return a number', function(){
