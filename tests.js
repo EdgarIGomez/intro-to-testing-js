@@ -90,6 +90,50 @@ describe('isEven', function (){
         expect(isEven()).toEqual(false)
     });
 })
+describe('isVowel', function () {
+    it('should be a defined function', function () {
+        expect(typeof isVowel).toBe("function")
+    });
+    it('should always return a boolean', function () {
+        expect(typeof isVowel()).toBe("boolean")
+    });
+    it('should return true if isVowel("a") is called', function () {
+        expect(isVowel("a")).toEqual(true)
+    });
+    it('should return true if isVowel("A") is called', function () {
+        expect(isVowel("A")).toEqual(true)
+    });
+    it('should return false if isVowel("y") is called', function () {
+        expect(isVowel("y")).toEqual(false)
+    });
+    it('should return false if isVowel(4) is called', function () {
+        expect(isVowel(4)).toEqual(false)
+    });
+    it('should return false if isVowel(true) is called', function () {
+        expect(isVowel(true)).toEqual(false)
+    });
+    it('should return false if isVowel(false) is called', function () {
+        expect(isVowel(false)).toEqual(false)
+    });
+    it('should return false if isVowel("banana") is called', function () {
+        expect(isVowel("banana")).toEqual(false)
+    });
+    it('should return false if isVowel() is called', function () {
+        expect(isVowel()).toEqual(false)
+    });
+    it('should return true if isVowel("e") is called', function () {
+        expect(isVowel("e")).toEqual(true)
+    });
+    it('should return true if isVowel("i") is called', function () {
+        expect(isVowel("i")).toEqual(true)
+    });
+    it('should return true if isVowel("O") is called', function () {
+        expect(isVowel("O")).toEqual(true)
+    });
+    it('should return true if isVowel("u") is called', function () {
+        expect(isVowel("u")).toEqual(true)
+    });
+});
 
 
 /*describe('double', function(){

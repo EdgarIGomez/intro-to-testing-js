@@ -15,6 +15,14 @@ function isFive(number){
 function isEven(num){
    return parseInt(num) % 2 === 0
 }
+function isVowel(letter) {
+   if((typeof letter) == "string"){
+      return (letter.toLowerCase() === "a" || letter.toLowerCase() === "e" || letter.toLowerCase() === "i"
+          || letter.toLowerCase() === "o" || letter.toLowerCase() === "u")
+   } else {
+      return false
+   }
+}
 
 
 
