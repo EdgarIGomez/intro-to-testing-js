@@ -12,7 +12,9 @@ function sayHello(name) {
 function isFive(number){
    return parseInt(number) === 5
 }
-
+function isEven(num){
+   return parseInt(num) % 2 === 0
+}
 
 
 

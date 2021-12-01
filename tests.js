@@ -55,7 +55,41 @@ describe('isFive', function (){
     });
 })
 
-
+describe('isEven', function (){
+    it('should be a defined function', function () {
+        expect(typeof isEven).toBe("function")
+    });
+    it('should return a boolean', function () {
+        expect(typeof isEven()).toBe("boolean")
+    });
+    it('should return true if isEven(2)', function () {
+        expect(isEven(2)).toEqual(true)
+    });
+    it('should return true if isEven(-4)', function () {
+        expect(isEven(-4)).toEqual(true)
+    });
+    it('should return false if isEven(3)', function () {
+        expect(isEven(3)).toEqual(false)
+    });
+    it('should return false if isEven("banana")', function () {
+        expect(isEven("banana")).toEqual(false)
+    });
+    it('should return true if isEven("8")', function () {
+        expect(isEven("8")).toEqual(true)
+    });
+    it('should return false if isEven(Infinity)', function () {
+        expect(isEven(Infinity)).toEqual(false)
+    });
+    it('should return false if isEven(true)', function () {
+        expect(isEven(true)).toEqual(false)
+    });
+    it('should return false if isEven(false)', function () {
+        expect(isEven(false)).toEqual(false)
+    });
+    it('should return false if isEven() is just called', function () {
+        expect(isEven()).toEqual(false)
+    });
+})
 
 
 /*describe('double', function(){
